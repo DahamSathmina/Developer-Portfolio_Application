@@ -176,7 +176,7 @@ export const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
             variants={itemVariants}
           >
             {[
-              { icon: Github, href: '#', label: 'GitHub', color: 'hover:text-gray-400' },
+              { icon: Github, href: 'https://github.com/DahamSathmina', label: 'GitHub', color: 'hover:text-gray-400' },
               { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
               { icon: Mail, href: '#', label: 'Email', color: 'hover:text-green-400' },
             ].map(({ icon: Icon, href, label, color }) => (
