@@ -124,7 +124,7 @@ export const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
             variants={itemVariants}
           >
             <motion.h1
-              className="text-6xl md:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600 leading-none"
+              className="text-6xl md:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-500 to-red-600 leading-none"
               style={{
                 fontFamily: '"Orbitron", "Inter", sans-serif',
                 textShadow: '0 0 30px rgba(220, 38, 38, 0.5)',

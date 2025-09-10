@@ -1,0 +1,25 @@
+* {
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #1b3447b7;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #ff2424;
+  border-radius: 5px;
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d20d0d;
+}
+}
+html{
+    scroll-behavior: smooth;
+}
