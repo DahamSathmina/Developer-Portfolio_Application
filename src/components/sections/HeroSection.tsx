@@ -10,13 +10,16 @@ export const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
   ({ scrollMode }, ref) => {
     const [displayText, setDisplayText] = useState('');
     const [currentPhrase, setCurrentPhrase] = useState(0);
-    const controls = useAnimation();
     
     const phrases = [
-      'Software Developer & Tech Creator',
+      'Entrepreneur & Tech Enthusiast',
+      'Software Engineer',
+      'DevOps Specialist',
+      'Programmer',
       'Full-Stack Engineer',
       'Mobile App Developer',
-      'Problem Solver & Innovator'
+      'Problem Solver & Innovator',
+      'Content Creator'
     ];
 
     useEffect(() => {
@@ -64,7 +67,7 @@ export const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
       visible: {
         y: 0,
         opacity: 1,
-        transition: { duration: 1, ease: 'easeOut' },
+        transition: { duration: 1, ease: [0.22, 1, 0.36, 1] as any },
       },
     };
 

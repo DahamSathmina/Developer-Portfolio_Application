@@ -22,8 +22,8 @@ export const AboutSection = forwardRef<HTMLDivElement, AboutSectionProps>(
     ];
 
     const achievements = [
-      { icon: Award, number: '50+', label: 'Projects Completed' },
-      { icon: Users, number: '20+', label: 'Happy Clients' },
+      { icon: Award, number: '80+', label: 'Projects Completed' },
+      { icon: Users, number: '78+', label: 'Happy Clients' },
       { icon: Code, number: '5+', label: 'Years Experience' },
     ];
 
