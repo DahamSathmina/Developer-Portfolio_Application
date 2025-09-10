@@ -87,12 +87,12 @@ export const AboutSection = forwardRef<HTMLDivElement, AboutSectionProps>(
                     </motion.div>
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Passionate Developer</h3>
-                      <p className="text-red-500 font-medium">Full-Stack Engineer</p>
+                      <p className="text-red-500 font-medium">Softwere Engineer</p>
                     </div>
                   </div>
                   
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                    I'm a dedicated software developer with a passion for creating innovative solutions 
+                    I'm a dedicated software Developer with a passion for creating innovative solutions 
                     that solve real-world problems. With expertise across multiple programming languages 
                     and platforms, I bring ideas to life through clean, efficient code and thoughtful design.
                   </p>
