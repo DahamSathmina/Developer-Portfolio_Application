@@ -26,10 +26,10 @@ export const LanguagesSection = forwardRef<HTMLDivElement, LanguagesSectionProps
       {
         name: 'English',
         level: 'Fluent',
-        proficiency: 95,
+        proficiency: 97,
         flag: '🇺🇸',
         description: 'Excellent command of English for professional and technical communication. Proficient in business writing and presentations.',
-        skills: ['Technical Writing', 'Business Communication', 'Presentations', 'Documentation'],
+        skills: ['Speaking','Technical Writing', 'Business Communication', 'Presentations', 'Documentation'],
       },
     ];
 

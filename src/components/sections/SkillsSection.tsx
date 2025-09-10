@@ -19,14 +19,14 @@ export const SkillsSection = forwardRef<HTMLDivElement, SkillsSectionProps>(
         title: 'Programming Languages',
         icon: Code,
         skills: [
-          { name: 'Python', level: 95, color: '#3776ab' },
+          { name: 'Python', level: 98, color: '#3776ab' },
           { name: 'JavaScript', level: 90, color: '#f7df1e' },
-          { name: 'C++', level: 85, color: '#00599c' },
-          { name: 'Java', level: 80, color: '#ed8b00' },
-          { name: 'C#', level: 75, color: '#239120' },
-          { name: 'Swift', level: 70, color: '#fa7343' },
-          { name: 'Kotlin', level: 65, color: '#7f52ff' },
-          { name: 'Go', level: 60, color: '#00add8' },
+          { name: 'C++', level: 88, color: '#00599c' },
+          { name: 'Java', level: 85, color: '#ed8b00' },
+          { name: 'C#', level: 91, color: '#239120' },
+          { name: 'Swift', level: 89, color: '#fa7343' },
+          { name: 'Kotlin', level: 90, color: '#7f52ff' },
+          { name: 'Go', level: 77, color: '#00add8' },
           { name: 'SQL', level: 85, color: '#336791' },
         ],
         gradient: 'from-red-500 to-red-600',
@@ -51,10 +51,10 @@ export const SkillsSection = forwardRef<HTMLDivElement, SkillsSectionProps>(
           { name: 'Flutter', level: 90, color: '#02569b' },
           { name: 'Dart', level: 88, color: '#0175c2' },
           { name: 'React Native', level: 75, color: '#61dafb' },
-          { name: 'iOS Development', level: 70, color: '#000000' },
-          { name: 'Android', level: 68, color: '#3ddc84' },
+          { name: 'iOS Development', level: 88, color: '#000000' },
+          { name: 'Android', level: 90, color: '#3ddc84' },
         ],
-        gradient: 'from-red-300 to-red-400',
+        gradient: 'from-red-500 to-red-600',
       },
     ];
 
@@ -229,7 +229,7 @@ export const SkillsSection = forwardRef<HTMLDivElement, SkillsSectionProps>(
             <h3 className="text-2xl font-bold text-white mb-8">Additional Expertise</h3>
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                { name: 'Docker', icon: '🐳' },
+                { name: 'Docker', icon: '🐋' },
                 { name: 'AWS', icon: '☁️' },
                 { name: 'Git', icon: '📝' },
                 { name: 'MongoDB', icon: '🍃' },

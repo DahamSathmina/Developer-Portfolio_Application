@@ -53,31 +53,31 @@ export const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
       {
         icon: Mail,
         label: 'Email',
-        value: 'daham.sathmin@example.com',
-        href: 'mailto:daham.sathmin@example.com',
+        value: 'sathminadaham75@gmail.com',
+        href: 'sathminadaham75@gmail.com',
         color: 'text-blue-500',
         bgColor: 'bg-blue-500/10',
       },
       {
         icon: Phone,
         label: 'Phone',
-        value: '+1 (555) 123-4567',
-        href: 'tel:+15551234567',
+        value: '+94 742 334 961',
+        href: 'tel:+94742334961',
         color: 'text-green-500',
         bgColor: 'bg-green-500/10',
       },
       {
         icon: MapPin,
         label: 'Location',
-        value: 'San Francisco, CA',
-        href: '#',
+        value: 'Kandy, SRI LANKA',
+        href: 'https://maps.app.goo.gl/2fGWbU3SoYGb7DFV9',
         color: 'text-purple-500',
         bgColor: 'bg-purple-500/10',
       },
     ];
 
     const socialLinks = [
-      { icon: Github, href: '#', label: 'GitHub', color: 'hover:text-gray-400' },
+      { icon: Github, href: 'https://github.com/DahamSathmina', label: 'GitHub', color: 'hover:text-gray-400' },
       { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
       { icon: Twitter, href: '#', label: 'Twitter', color: 'hover:text-sky-400' },
     ];
