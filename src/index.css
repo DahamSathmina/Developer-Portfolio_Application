@@ -1,7 +1,1 @@
-/* Tailwind directives */
-/* stylelint-disable-next-line at-rule-no-unknown */
-@import "tailwindcss/base";
-/* stylelint-disable-next-line at-rule-no-unknown */
-@import "tailwindcss/components";
-/* stylelint-disable-next-line at-rule-no-unknown */
-@import "tailwindcss/utilities";
+@import "tailwindcss";
