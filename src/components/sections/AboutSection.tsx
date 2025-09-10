@@ -16,9 +16,9 @@ export const AboutSection = forwardRef<HTMLDivElement, AboutSectionProps>(
 
     const skills = [
       { name: 'Problem Solving', value: 95, color: 'from-red-500 to-red-600' },
-      { name: 'Code Quality', value: 90, color: 'from-red-400 to-red-500' },
-      { name: 'Team Leadership', value: 85, color: 'from-red-300 to-red-400' },
-      { name: 'Innovation', value: 88, color: 'from-red-600 to-red-700' },
+      { name: 'Code Quality', value: 94, color: 'from-red-500 to-red-600' },
+      { name: 'Team Leadership', value: 85, color: 'from-red-400 to-red-600' },
+      { name: 'Innovation', value: 89, color: 'from-red-500 to-red-600' },
     ];
 
     const achievements = [
