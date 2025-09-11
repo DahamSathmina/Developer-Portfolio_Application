@@ -15,15 +15,15 @@ export const AboutSection = forwardRef<HTMLDivElement, AboutSectionProps>(
     });
 
     const skills = [
-      { name: 'Problem Solving', value: 95, color: 'from-red-500 to-red-600' },
+      { name: 'Problem Solving', value: 97, color: 'from-red-500 to-red-600' },
       { name: 'Code Quality', value: 94, color: 'from-red-500 to-red-600' },
       { name: 'Team Leadership', value: 85, color: 'from-red-400 to-red-600' },
       { name: 'Innovation', value: 89, color: 'from-red-500 to-red-600' },
     ];
 
     const achievements = [
-      { icon: Award, number: '80+', label: 'Projects Completed' },
-      { icon: Users, number: '78+', label: 'Happy Clients' },
+      { icon: Award, number: '200+', label: 'Projects Completed' },
+      { icon: Users, number: '130+', label: 'Happy Clients' },
       { icon: Code, number: '5+', label: 'Years Experience' },
     ];
 

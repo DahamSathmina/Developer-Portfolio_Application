@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageSquare, Calendar, User } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Youtube, Facebook, MessageSquare, Calendar, User, Instagram } from 'lucide-react';
 
 interface ContactSectionProps {
   scrollMode: 'vertical' | 'horizontal';
@@ -60,7 +60,7 @@ export const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
       },
       {
         icon: Phone,
-        label: 'Phone',
+        label: 'Call Me',
         value: '+94 742 334 961',
         href: 'tel:+94742334961',
         color: 'text-green-500',
@@ -69,7 +69,7 @@ export const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
       {
         icon: MapPin,
         label: 'Location',
-        value: 'Kandy, SRI LANKA',
+        value: 'Central Province / Kandy, Sri Lanka',
         href: 'https://maps.app.goo.gl/2fGWbU3SoYGb7DFV9',
         color: 'text-purple-500',
         bgColor: 'bg-purple-500/10',
@@ -77,9 +77,11 @@ export const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
     ];
 
     const socialLinks = [
+      { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-gray-400' },
       { icon: Github, href: 'https://github.com/DahamSathmina', label: 'GitHub', color: 'hover:text-gray-400' },
-      { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-      { icon: Twitter, href: '#', label: 'Twitter', color: 'hover:text-sky-400' },
+      { icon: Youtube, href: '#', label: 'Youtube', color: 'hover:text-gray-400' },
+      { icon: Facebook, href: '#', label: 'Facebook', color: 'hover:text-gray-400' },
+      { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-gray-400' },
     ];
 
     const FloatingLabel = ({ 
@@ -226,8 +228,8 @@ export const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
                 <div className="mt-12 pt-8 border-t border-white/10">
                   <div className="grid grid-cols-2 gap-6">
                     {[
-                      { label: 'Response Time', value: '< 24h', icon: Calendar },
-                      { label: 'Projects Completed', value: '50+', icon: User },
+                      { label: 'Response Time', value: '24h/7', icon: Calendar },
+                      { label: 'Projects Completed', value: '200+', icon: User },
                     ].map((stat, index) => (
                       <motion.div
                         key={stat.label}
