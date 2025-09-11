@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+* {
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #1b2535;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #dd0000e3;
+  border-radius: 5px;
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a50000;
+}
+}
+html {
+      scroll-behavior: smooth;
+    }
+
+footer {
+  background-color: #1b2535;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border-top: 1.5px solid rgb(255, 18, 18);
+}    
+.footer-bottom-container{
+  background-color: #101620;
+}
+

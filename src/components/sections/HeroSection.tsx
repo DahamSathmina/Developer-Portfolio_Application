@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Globe, Download } from 'lucide-react';
 
 interface HeroSectionProps {
   scrollMode: 'vertical' | 'horizontal';
@@ -181,7 +181,7 @@ export const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
             {[
               { icon: Github, href: 'https://github.com/DahamSathmina', label: 'GitHub', color: 'hover:text-gray-400' },
               { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-              { icon: Mail, href: '#', label: 'Email', color: 'hover:text-green-400' },
+              { icon: Globe, href: '#', label: 'Email', color: 'hover:text-green-400' },
             ].map(({ icon: Icon, href, label, color }) => (
               <motion.a
                 key={label}
