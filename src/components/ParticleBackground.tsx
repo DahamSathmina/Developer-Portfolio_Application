@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useTheme } from '../hooks/useTheme';
 
 export function ParticleBackground() {
+  const { theme } = useTheme();
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -47,7 +49,11 @@ export function ParticleBackground() {
     };
 
     const animate = () => {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.03)';
+      // Dynamic background based on theme
+      const bgColor = theme === 'dark' 
+        ? 'rgba(0, 0, 0, 0.03)' 
+        : 'rgba(255, 255, 255, 0.03)';
+      ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((particle, index) => {
@@ -72,13 +78,17 @@ export function ParticleBackground() {
         if (particle.y > canvas.height) particle.y = 0;
         if (particle.y < 0) particle.y = canvas.height;
 
+        // Adjust particle colors based on theme
+        const particleOpacity = theme === 'dark' ? particle.opacity : particle.opacity * 0.7;
+        const particleHue = theme === 'dark' ? particle.hue : particle.hue + 20;
+
         // Draw particle with glow effect
         const gradient = ctx.createRadialGradient(
           particle.x, particle.y, 0,
           particle.x, particle.y, particle.size * 3
         );
-        gradient.addColorStop(0, `hsla(${particle.hue}, 100%, 60%, ${particle.opacity})`);
-        gradient.addColorStop(1, `hsla(${particle.hue}, 100%, 60%, 0)`);
+        gradient.addColorStop(0, `hsla(${particleHue}, 100%, 60%, ${particleOpacity})`);
+        gradient.addColorStop(1, `hsla(${particleHue}, 100%, 60%, 0)`);
 
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size * 3, 0, Math.PI * 2);
@@ -88,7 +98,7 @@ export function ParticleBackground() {
         // Core particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${particle.hue}, 100%, 70%, ${particle.opacity})`;
+        ctx.fillStyle = `hsla(${particleHue}, 100%, 70%, ${particleOpacity})`;
         ctx.fill();
 
         // Connect nearby particles
@@ -98,11 +108,11 @@ export function ParticleBackground() {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 100) {
-            const opacity = (1 - distance / 100) * 0.3;
+            const lineOpacity = (1 - distance / 100) * (theme === 'dark' ? 0.3 : 0.2);
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `hsla(0, 100%, 60%, ${opacity})`;
+            ctx.strokeStyle = `hsla(0, 100%, 60%, ${lineOpacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -134,7 +144,7 @@ export function ParticleBackground() {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []);
+  }, [theme]);
 
   return (
     <motion.canvas
@@ -143,7 +153,12 @@ export function ParticleBackground() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      style={{ mixBlendMode: 'screen' }}
+      style={{ 
+        mixBlendMode: theme === 'dark' ? 'screen' : 'multiply',
+        opacity: theme === 'dark' ? 1 : 0.6
+      }}
     />
   );
 }
+
+

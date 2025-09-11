@@ -1,39 +1,34 @@
-import { useState, useEffect, createContext, useContext } from 'react';
+import { useState, useEffect } from 'react';
 
 type Theme = 'dark' | 'light';
 
-interface ThemeContextType {
-  theme: Theme;
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-
 export function useTheme() {
-  const [theme, setTheme] = useState<Theme>('dark');
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('portfolio-theme') as Theme | null;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme) {
-      setTheme(savedTheme);
-    } else if (prefersDark) {
-      setTheme('dark');
-    } else {
-      setTheme('light');
+  const [theme, setTheme] = useState<Theme>(() => {
+    // Check localStorage first, then system preference
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('portfolio-theme') as Theme | null;
+      if (savedTheme) {
+        return savedTheme;
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
-  }, []);
+    return 'dark';
+  });
 
   useEffect(() => {
+    // Apply theme to document
     document.documentElement.classList.toggle('dark', theme === 'dark');
+    
+    // Save to localStorage
+    localStorage.setItem('portfolio-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
-    localStorage.setItem('portfolio-theme', newTheme);
   };
 
   return { theme, toggleTheme };
 }
+
+

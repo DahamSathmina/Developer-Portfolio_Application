@@ -1,5 +1,6 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Sun, Moon, Monitor, Smartphone } from 'lucide-react';
+import { Sun, Moon, Monitor, Smartphone, Menu } from 'lucide-react';
 
 interface NavigationProps {
   theme: 'dark' | 'light';
@@ -35,7 +36,7 @@ export function Navigation({
             className="text-2xl font-bold text-gray-900 dark:text-white"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-red-500">D</span>aham
+            <span className="text-red-500">O</span>DS {/* Site Header Nav Title */}
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -84,19 +85,23 @@ export function Navigation({
             {/* Theme Toggle */}
             <motion.button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-white/10 dark:bg-gray-800/50 hover:bg-red-500/20 transition-colors duration-300"
+              className="p-2 rounded-lg bg-white/10 dark:bg-gray-800/50 hover:bg-red-500/20 transition-all duration-300 border border-white/20 dark:border-gray-600/30"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
+              title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
             >
               <motion.div
                 initial={{ rotate: 0 }}
-                animate={{ rotate: theme === 'dark' ? 0 : 180 }}
-                transition={{ duration: 0.5 }}
+                animate={{ 
+                  rotate: theme === 'dark' ? 0 : 180,
+                  scale: theme === 'dark' ? 1 : 1.1
+                }}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
               >
                 {theme === 'dark' ? (
-                  <Sun className="w-5 h-5 text-yellow-400" />
+                  <Sun className="w-5 h-5 text-yellow-400 drop-shadow-lg" />
                 ) : (
-                  <Moon className="w-5 h-5 text-blue-400" />
+                  <Moon className="w-5 h-5 text-blue-600 drop-shadow-lg" />
                 )}
               </motion.div>
             </motion.button>
