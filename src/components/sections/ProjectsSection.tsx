@@ -26,7 +26,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Neural Network Framework',
         description: 'Advanced machine learning framework built with Python and TensorFlow for deep learning applications',
-        image: './Assets/Img/',
+        image: './Assets/img/Featured.gif',
         tech: ['Python', 'TensorFlow', 'NumPy', 'Scikit-learn'],
         github: '#',
         demo: '#',
@@ -37,7 +37,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Real-time Chat Application',
         description: 'Full-stack real-time messaging platform with Flutter frontend and Node.js backend',
-        image: '',
+        image: './Assets/img/Featured.gif',
         tech: ['Flutter', 'Dart', 'Node.js', 'Socket.io', 'MongoDB'],
         github: '#',
         demo: '#',
@@ -48,7 +48,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'E-commerce Platform',
         description: 'Modern e-commerce solution with advanced analytics, payment integration, and admin dashboard',
-        image: '',
+        image: './Assets/img/Featured.gif',
         tech: ['C#', 'ASP.NET', 'React', 'PostgreSQL', 'Stripe'],
         github: '#',
         demo: '#',
@@ -59,7 +59,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'iOS Task Manager',
         description: 'Native iOS productivity app with Core Data persistence and CloudKit synchronization',
-        image: '',
+        image: './Assets/img/Featured.gif',
         tech: ['Swift', 'SwiftUI', 'Core Data', 'CloudKit'],
         github: '#',
         demo: '#',
@@ -70,7 +70,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Data Visualization Dashboard',
         description: 'Interactive dashboard for complex data analysis with real-time updates and custom charts',
-        image: '',
+        image: './Assets/img/Featured.gif',
         tech: ['JavaScript', 'D3.js', 'React', 'Python', 'FastAPI'],
         github: '#',
         demo: '#',
@@ -81,7 +81,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Blockchain Voting System',
         description: 'Secure and transparent voting system built on blockchain technology with smart contracts',
-        image: '',
+        image: './Assets/img/Featured.gif',
         tech: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'IPFS'],
         github: '#',
         demo: '#',
