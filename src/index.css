@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource/poppins";
+
 
 * {
 /* Style the entire scrollbar */
