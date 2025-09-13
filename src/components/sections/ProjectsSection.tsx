@@ -26,7 +26,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Neural Network Framework',
         description: 'Advanced machine learning framework built with Python and TensorFlow for deep learning applications',
-        image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg',
+        image: '',
         tech: ['Python', 'TensorFlow', 'NumPy', 'Scikit-learn'],
         github: '#',
         demo: '#',
@@ -37,7 +37,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Real-time Chat Application',
         description: 'Full-stack real-time messaging platform with Flutter frontend and Node.js backend',
-        image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg',
+        image: '',
         tech: ['Flutter', 'Dart', 'Node.js', 'Socket.io', 'MongoDB'],
         github: '#',
         demo: '#',
@@ -48,7 +48,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'E-commerce Platform',
         description: 'Modern e-commerce solution with advanced analytics, payment integration, and admin dashboard',
-        image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
+        image: '',
         tech: ['C#', 'ASP.NET', 'React', 'PostgreSQL', 'Stripe'],
         github: '#',
         demo: '#',
@@ -59,7 +59,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'iOS Task Manager',
         description: 'Native iOS productivity app with Core Data persistence and CloudKit synchronization',
-        image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg',
+        image: '',
         tech: ['Swift', 'SwiftUI', 'Core Data', 'CloudKit'],
         github: '#',
         demo: '#',
@@ -70,7 +70,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Data Visualization Dashboard',
         description: 'Interactive dashboard for complex data analysis with real-time updates and custom charts',
-        image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
+        image: '',
         tech: ['JavaScript', 'D3.js', 'React', 'Python', 'FastAPI'],
         github: '#',
         demo: '#',
@@ -81,7 +81,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Blockchain Voting System',
         description: 'Secure and transparent voting system built on blockchain technology with smart contracts',
-        image: 'https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg',
+        image: '',
         tech: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'IPFS'],
         github: '#',
         demo: '#',
@@ -122,7 +122,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
               transition={{ duration: 1, delay: 0.5 }}
             />
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              A showcase of innovative solutions and creative implementations
+              Explore my latest work showcasing innovation, technical expertise, and creative problem-solving
             </p>
           </motion.div>
 
