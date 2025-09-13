@@ -1,7 +1,7 @@
 import React, { forwardRef, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Star, Code, Smartphone, Globe } from 'lucide-react';
+import { ExternalLink, Github, Star, Code, Smartphone, Globe, Computer } from 'lucide-react';
 
 interface ProjectsSectionProps {
   scrollMode: 'vertical' | 'horizontal';
@@ -26,7 +26,7 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
       {
         title: 'Neural Network Framework',
         description: 'Advanced machine learning framework built with Python and TensorFlow for deep learning applications',
-        image: '',
+        image: './Assets/Img/',
         tech: ['Python', 'TensorFlow', 'NumPy', 'Scikit-learn'],
         github: '#',
         demo: '#',
@@ -42,8 +42,8 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
         github: '#',
         demo: '#',
         featured: true,
-        category: 'Mobile',
-        icon: Smartphone,
+        category: 'Mobile & DeskTop',
+        icon: Computer,
       },
       {
         title: 'E-commerce Platform',
@@ -53,8 +53,8 @@ export const ProjectsSection = forwardRef<HTMLDivElement, ProjectsSectionProps>(
         github: '#',
         demo: '#',
         featured: false,
-        category: 'Web',
-        icon: Globe,
+        category: 'DeskTop & Web',
+        icon: Computer,
       },
       {
         title: 'iOS Task Manager',
