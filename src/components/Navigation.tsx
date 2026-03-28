@@ -36,7 +36,7 @@ export function Navigation({
             className="text-2xl font-bold text-gray-900 dark:text-white"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-red-500">O</span>DS {/* Site Header Nav Title */}
+            <span className="text-red-500">O</span>DSD {/* Site Header Nav Title */}
           </motion.div>
 
           {/* Desktop Navigation */}
