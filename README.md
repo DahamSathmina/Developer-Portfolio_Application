@@ -4,14 +4,14 @@ A modern, responsive **portfolio website** built with **React, TypeScript, and V
 Showcase your **skills, projects, and experience** with smooth animations, themes, and fast performance.  
 
 ---
-
-## ✨ Features
-- 🌗 Dark/Light theme toggle  
-- ↔️ Horizontal & vertical scroll modes  
-- 🎇 Animated particle background  
-- 🎭 Framer Motion & GSAP animations  
-- 📂 Sections: Hero, About, Projects, Skills, Contact  
-- ⚡ Super-fast builds with Vite  
+> [!NOTE]
+>## ✨ Features
+>-  Dark/Light theme toggle  
+>-  Horizontal & vertical scroll modes  
+>-  Animated particle background  
+>-  Framer Motion & GSAP animations  
+>-  Sections: Hero, About, Projects, Skills, Contact  
+>-  Super-fast builds with Vite  
 
 ---
 
